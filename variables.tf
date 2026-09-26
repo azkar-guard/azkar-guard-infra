@@ -5,9 +5,9 @@ variable "org" {
 }
 
 variable "visibility" {
-  description = "Repo visibility. Branch protection on the Free plan requires public."
+  description = "Repo visibility. Branch protection on the Free plan requires public, so it is skipped for private repos."
   type        = string
-  default     = "public"
+  default     = "private"
 
   validation {
     condition     = contains(["public", "private"], var.visibility)
