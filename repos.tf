@@ -31,7 +31,8 @@ resource "github_repository_vulnerability_alerts" "this" {
 }
 
 resource "github_branch_protection" "main" {
-  for_each = github_repository.this
+  # Free plan only supports branch protection on public repos.
+  for_each = var.visibility == "public" ? github_repository.this : {}
 
   repository_id = each.value.node_id
   pattern       = "main"
