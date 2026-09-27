@@ -28,5 +28,5 @@ terraform apply
 ## Notes
 
 - State is local for now (`terraform.tfstate`, gitignored). Move it to a remote backend before sharing.
-- Repos are private by default (`var.visibility`). Branch protection on the Free plan only works for public repos, so it is only created when `visibility = "public"`.
+- Repos are public (`var.visibility`). Branch protection on the Free plan only works for public repos, so it is only created when `visibility = "public"`. Before switching private repos to public, scan their full git history for secrets, since the whole history becomes visible.
 - Repos have `prevent_destroy`. Removing one from `var.repos` fails the plan on purpose.
