@@ -35,7 +35,7 @@ variable "repos" {
     "azkar-guard-vscode-extension" = {
       description = "Phase 2: VS Code extension that enforces morning/evening Azkar completion."
       topics      = ["azkar", "vscode-extension", "open-vsx"]
-      homepage    = "https://marketplace.visualstudio.com/items?itemName=azkar-guard.azkar-guard"
+      homepage    = "https://marketplace.visualstudio.com/items?itemName=azkar-guard.azkar-guard-vscode"
     }
     "azkar-guard-website" = {
       description = "Phase 3: dashboard for streaks, history and synced settings."
