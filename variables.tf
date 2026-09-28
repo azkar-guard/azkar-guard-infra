@@ -31,6 +31,7 @@ variable "repos" {
     "azkar-guard-browser-extension" = {
       description = "Phase 1: Manifest V3 browser extension that enforces morning/evening Azkar completion."
       topics      = ["azkar", "browser-extension", "chrome-extension", "manifest-v3"]
+      homepage    = "https://chromewebstore.google.com/detail/pphgcabpchgmnmpfchhgjcckdgmcjnic"
     }
     "azkar-guard-vscode-extension" = {
       description = "Phase 2: VS Code extension that enforces morning/evening Azkar completion."
