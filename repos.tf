@@ -1,10 +1,11 @@
 resource "github_repository" "this" {
   for_each = var.repos
 
-  name        = each.key
-  description = each.value.description
-  topics      = each.value.topics
-  visibility  = var.visibility
+  name         = each.key
+  description  = each.value.description
+  topics       = each.value.topics
+  homepage_url = each.value.homepage
+  visibility   = var.visibility
 
   has_issues   = true
   has_projects = false
